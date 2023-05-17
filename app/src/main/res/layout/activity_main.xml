@@ -22,7 +22,7 @@
         android:layout_width="140dp"
         android:layout_height="40dp"
         android:layout_marginStart="260dp"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="25dp">
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/main_IMG_heart1"
@@ -48,16 +48,37 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/main_TIMER"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/TIMER_main_TXT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="000"
+            android:textColor="@color/black_500"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            />
+
+
+
+    </LinearLayout>
 
     <GridLayout
         android:id="@+id/main_grid"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="360dp"
+        android:layout_height="437dp"
         android:layout_below="@+id/main_IMG_hearts"
-        android:layout_marginTop="3dp"
-        android:alignmentMode="alignMargins"
-        android:layout_marginStart="-30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="0dp"
+        android:alignmentMode="alignMargins"
 
         android:columnCount="5"
         android:columnOrderPreserved="false"
@@ -65,25 +86,34 @@
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/Thief"
-            android:layout_width="135dp"
+            android:layout_width="70dp"
             android:layout_height="50dp"
             android:layout_row="0"
-            android:layout_column="1"
-            android:src="@drawable/thief"
-             />
+            android:layout_column="2"
+            android:src="@drawable/thief" />
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/Ob1"
-            android:layout_width="135dp"
+            android:layout_width="70dp"
             android:layout_height="50dp"
             android:layout_row="1"
             android:layout_column="0"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:src="@drawable/obstacle" />
 
         <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/coin1"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/coin" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/Ob4"
-            android:layout_width="135dp"
+            android:layout_width="70dp"
             android:layout_height="50dp"
             android:layout_row="1"
             android:layout_column="1"
@@ -92,97 +122,210 @@
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/Ob7"
-            android:layout_width="135dp"
+            android:layout_width="70dp"
             android:layout_height="50dp"
             android:layout_row="1"
             android:layout_column="2"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="20dp"
             android:src="@drawable/obstacle" />
 
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/Ob10"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/obstacle" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/coin4"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/coin" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/Ob13"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_row="1"
+            android:layout_column="4"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/obstacle" />
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/Ob2"
-            android:layout_width="140dp"
+            android:layout_width="70dp"
             android:layout_height="50dp"
             android:layout_row="2"
             android:layout_column="0"
-            android:layout_marginTop="130dp"
+            android:layout_marginTop="50dp"
             android:src="@drawable/obstacle" />
 
         <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/coin2"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/coin" />
+
+        <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/Ob5"
-            android:layout_width="135dp"
+            android:layout_width="70dp"
             android:layout_height="50dp"
             android:layout_row="2"
             android:layout_column="1"
-            android:layout_marginTop="110dp"
+            android:layout_marginTop="50dp"
             android:src="@drawable/obstacle" />
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/Ob8"
-            android:layout_width="135dp"
+            android:layout_width="70dp"
             android:layout_height="50dp"
             android:layout_row="2"
             android:layout_column="2"
-            android:layout_marginTop="90dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/obstacle" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/Ob11"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/obstacle" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/coin5"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/coin" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/Ob14"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_row="2"
+            android:layout_column="4"
+            android:layout_marginTop="50dp"
             android:src="@drawable/obstacle" />
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/Ob3"
-            android:layout_width="135dp"
+            android:layout_width="70dp"
             android:layout_height="50dp"
             android:layout_row="3"
             android:layout_column="0"
-            android:layout_marginTop="110dp"
+            android:layout_marginTop="50dp"
             android:src="@drawable/obstacle" />
 
         <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/coin3"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/coin" />
+
+        <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/Ob6"
-            android:layout_width="135dp"
+            android:layout_width="70dp"
             android:layout_height="50dp"
             android:layout_row="3"
             android:layout_column="1"
-            android:layout_marginTop="110dp"
+            android:layout_marginTop="50dp"
             android:src="@drawable/obstacle" />
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/Ob9"
-            android:layout_width="135dp"
+            android:layout_width="70dp"
             android:layout_height="50dp"
             android:layout_row="3"
             android:layout_column="2"
-            android:layout_marginTop="110dp"
+            android:layout_marginTop="50dp"
             android:src="@drawable/obstacle" />
 
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/Ob12"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/obstacle" />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/carLeft"
-            android:layout_width="135dp"
+            android:id="@+id/coin6"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/coin" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/Ob15"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_row="3"
+            android:layout_column="4"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/obstacle" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/carLeft2"
+            android:layout_width="70dp"
             android:layout_height="50dp"
             android:layout_row="4"
             android:layout_column="0"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="50dp"
             android:src="@drawable/policecar" />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/carMiddle"
-            android:layout_width="135dp"
+            android:id="@+id/carLeft1"
+            android:layout_width="70dp"
             android:layout_height="50dp"
             android:layout_row="4"
             android:layout_column="1"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="50dp"
             android:src="@drawable/policecar" />
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/carRight"
-            android:layout_width="135dp"
+            android:id="@+id/carCenter"
+            android:layout_width="70dp"
             android:layout_height="50dp"
             android:layout_row="4"
             android:layout_column="2"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="50dp"
             android:src="@drawable/policecar" />
 
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/carRight1"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/policecar" />
 
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/carRight2"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_row="4"
+            android:layout_column="4"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/policecar" />
     </GridLayout>
 
     <LinearLayout
@@ -191,7 +334,7 @@
         android:layout_height="70dp"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="50dp"
         android:layout_below="@+id/main_grid"
         >
 
@@ -203,7 +346,7 @@
         android:layout_alignParentBottom = "true"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="20dp"
-        android:src="@drawable/rightarrow"
+        android:src="@drawable/leftarrow"
         android:scaleType="center"
         app:maxImageSize="40dp"
         app:backgroundTint="@color/white"
@@ -226,7 +369,7 @@
             android:layout_alignParentBottom = "true"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="20dp"
-            android:src="@drawable/leftarrow"
+            android:src="@drawable/rightarrow"
             android:scaleType="center"
             app:maxImageSize="40dp"
             app:backgroundTint="@color/white"
